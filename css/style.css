@@ -31,7 +31,7 @@ body{
     display: flex;
 }
 
-.link a{
+.link span{
     color: #fff;
     opacity: 0.5;
     text-decoration: none;
@@ -39,11 +39,12 @@ body{
     padding: 10px 30px;
     margin: 0px 20px;
     line-height: 80px;
-    transition: 0.5s;
+    transition: 0.1s;
     font-size: 20px;
+    cursor: pointer;
 }
 
-.link a:hover, .link.active a{
+.link span:hover, .link.active span{
     opacity: 1;
 }
 
@@ -68,7 +69,7 @@ body{
     position: fixed;
     top: 0;
     max-width: 1400px;
-    transition: .5s;
+    transition: 0.1s;
     opacity: 0;
 }
 
@@ -98,7 +99,7 @@ body{
     padding: 150px 100px 100px;
     position: fixed;
     top: 0;
-    transition: .5s;
+    transition: 0.1s;
     opacity: 0;
 }
 
@@ -132,14 +133,14 @@ body{
     top: 0;
     left: 0;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .project-content{
     position: relative;
     padding: 40px;
     color: #fff;
-    transition: 0.5s;
+    transition: 0.1s;
     opacity: 0;
 }
 
@@ -195,7 +196,7 @@ body{
     position: fixed;
     top: 0;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .about{
@@ -235,7 +236,7 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .download-cv-btn:hover {
@@ -434,7 +435,7 @@ body{
     position: fixed;
     top: 0;
     opacity: 0;
-    transition: 1s;
+    transition: 0.1s;
     padding: 150px;
     height: 100vh;
     display: grid;
