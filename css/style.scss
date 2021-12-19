@@ -685,10 +685,10 @@ body{
     }
     .skill-level{
         position: absolute;
-        top: 10%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
+        top: 13%;
+        left: 42%;
+        width: 90px;
+        height: 90px;
         font-size: 18px;
         border-radius: 50%;
         border: 7px solid;
@@ -718,14 +718,14 @@ body{
     // -----contact-section-----
     .contact-section{
         max-width: 576px;
-        padding: 20px 15px;
+        padding: 5% 5% 30% 5%;
         height: unset;
         min-height: 100vh;
     }
     .contact-heading{
         background: $heading-gray;
         font-size: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 7%;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-stroke: 5px transparent;
