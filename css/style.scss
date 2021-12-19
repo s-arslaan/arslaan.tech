@@ -111,7 +111,7 @@ body{
 .download-cv-btn{
     padding: 10px 20px;
     color: $white;
-    border: 1px solid $white;
+    border: 2px solid $white;
     border-radius: 20px;
     font-size: 16px;
     text-transform: uppercase;
@@ -530,13 +530,8 @@ body{
         right: 0;
         top: unset;
         z-index: 9;
-
-        //give nav it's own compsite layer
-        // will-change:transform;
-        // transform: translateZ(0);
-
         display: flex;
-        height: 8%;
+        height: 10%;
         width: 100%;
     }
 
@@ -550,7 +545,6 @@ body{
         line-height: 20px;
         transition: 0.1s;
         font-size: 15px;
-        text-align: center;
     }
 
     .home-section{
