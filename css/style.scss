@@ -642,6 +642,7 @@ body{
         top: 0;
         opacity: 0;
         transition: 0.1s;
+        margin-bottom: 30%;
     }
     .about{
         display: block;
@@ -698,16 +699,21 @@ body{
         width: 100%;
         margin: 80px auto;
     }.timeline .heading{
-        margin-bottom: 120px;
+        margin-bottom: 170px;
     }
 
     .card{
         width: 45%;
         padding: 20px;
-        margin: -70px 0;
+        margin: -29% 0;
         position: relative;
     }
-
+    .card:nth-child(even)::before{
+        left: -20%;
+    }
+    .card:nth-child(odd)::before{
+        right: -20%;
+    }
 
     // -----contact-section-----
     .contact-section{
