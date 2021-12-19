@@ -4,10 +4,9 @@
   "description": "arslaan's portfolio",
   "main": "index.html",
   "scripts": {
-    "start": "npm run watch:scss",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss"
+    "start": "npm run scss",
+    "scss": "sass --watch css/style.scss css/style.css --style=compressed"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,6 @@
   },
   "homepage": "https://github.com/s-arslaan/arslaan.tech#readme",
   "devDependencies": {
-    "scss": "^0.2.4"
+    "sass": "^1.45.0"
   }
 }
