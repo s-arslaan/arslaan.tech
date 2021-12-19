@@ -529,10 +529,10 @@ body{
         left: 0;
         right: 0;
         top: unset;
-        z-index: 9;
         display: flex;
         height: 10%;
         width: 100%;
+        z-index: 9;
     }
 
     .icons{
@@ -540,11 +540,11 @@ body{
     }
 
     .link span{
-        padding: 5px 30px;
-        margin: 0px 20px;
-        line-height: 20px;
-        transition: 0.1s;
-        font-size: 15px;
+        display: block;
+        line-height: 25px;
+        padding: 5px;
+        margin: 2px;
+        text-align: center;
     }
 
     .home-section{
