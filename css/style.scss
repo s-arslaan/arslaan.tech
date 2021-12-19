@@ -1,4 +1,27 @@
-$bg-gray: #191919;
+$nav-bg: #1a1a1a;
+$body-bg: #191919;
+$white: #fff;
+$black: #000;
+
+$red: #ff4f4f;
+$red-trans: #ff4f4f28;
+
+$blue: #4fa0ff;
+$blue-trans: #4fa0ff28;
+
+$yellow: #ffb84f;
+$js: #ffed4f;
+$js-trans: #ffed4f28;
+
+$green: #3dca5c;
+$node: #52ff4f;
+$node-trans: #52ff4f28;
+
+$skyBlue: #4fdfff;
+$skyBlue-trans: #4fdfff28;
+
+$gray: #565252;
+
 
 * {
     margin: 0;
@@ -12,7 +35,7 @@ body{
     display: block;
     margin: auto;
     min-height: 100vh;
-    background: $bg-gray;
+    background: $body-bg;
     font-family: sans-serif;
 }
 
@@ -25,7 +48,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 9;
-    background: #1a1a1a;
+    background: $nav-bg;
 }
 
 .link-group{
@@ -34,7 +57,7 @@ body{
 }
 
 .link span{
-    color: #fff;
+    color: $white;
     opacity: 0.5;
     text-decoration: none;
     text-transform: capitalize;
@@ -75,11 +98,8 @@ body{
     opacity: 0;
 }
 
-.home-heading-div{
-    /* background-color: #3dca5c; */
-}
 .hero-heading{
-    color:#fff;
+    color:$white;
     font-size: 120px;
     text-transform: capitalize;
     font-weight: 300;
@@ -87,8 +107,8 @@ body{
 
 .download-cv-btn{
     padding: 10px 20px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: $white;
+    border: 1px solid $white;
     border-radius: 20px;
     font-size: 16px;
     text-transform: uppercase;
@@ -97,7 +117,7 @@ body{
     transition: 0.1s;
     z-index: 3;
 }.download-cv-btn:hover {
-    background: #000;
+    background: $black;
 }
 
 .home-img{
@@ -129,7 +149,7 @@ body{
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
-    color: #1a1a1a;
+    color: $nav-bg;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 8px transparent;
@@ -159,7 +179,7 @@ body{
 .project-content{
     position: relative;
     padding: 40px;
-    color: #fff;
+    color: $white;
     transition: 0.1s;
     opacity: 0;
 }
@@ -189,14 +209,14 @@ body{
     text-transform: capitalize;
     font-size: 18px;
     border: none;
-    background: #000;
-    color: #fff;
+    background: $black;
+    color: $white;
     cursor: pointer;
 }
 
 .project-btn.live{
     background: none;
-    border: 2px solid #fff;
+    border: 2px solid $white;
 }
 
 .project-card:hover .project-img{
@@ -232,7 +252,7 @@ body{
 }
 
 .about-info{
-    color: #fff;
+    color: $white;
     opacity: 0.6;
     font-size: 20px;
     line-height: 40px;
@@ -255,7 +275,7 @@ body{
 .heading{
     text-align: center;
     font-size: 60px;
-    color: #fff;
+    color: $white;
     text-transform: capitalize;
     font-weight: 300;
     margin-bottom: 100px;
@@ -267,7 +287,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
-    color: #fff;
+    color: $white;
 }
 
 .skill-card{
@@ -310,25 +330,25 @@ body{
 }
 
 .skill-card:nth-child(1) .skill-level{
-    background: #ff4f4f28;
-    border-color: #ff4f4f;
-    color: #ff4f4f;
+    background: $red-trans;
+    border-color: $red;
+    color: $red;
 }.skill-card:nth-child(2) .skill-level{
-    background: #4fa0ff28;
-    border-color: #4fa0ff;
-    color: #4fa0ff;
+    background: $blue-trans;
+    border-color: $blue;
+    color: $blue;
 }.skill-card:nth-child(3) .skill-level{
-    background: #ffed4f28;
-    border-color: #ffed4f;
-    color: #ffed4f;
+    background: $js-trans;
+    border-color: $js;
+    color: $js;
 }.skill-card:nth-child(4) .skill-level{
-    background: #52ff4f28;
-    border-color: #52ff4f;
-    color: #52ff4f;
+    background: $node-trans;
+    border-color: $node;
+    color: $node;
 }.skill-card:nth-child(5) .skill-level{
-    background: #4fdfff28;
-    border-color: #4fdfff;
-    color: #4fdfff;
+    background: $skyBlue-trans;
+    border-color: $skyBlue;
+    color: $skyBlue;
 }
 
 /* timeline */
@@ -347,11 +367,10 @@ body{
     width: 45%;
     padding: 30px;
     border-radius: 10px;
-    color: #fff;
+    color: $white;
     display: block;
     margin: -60px 0;
     position: relative;
-    background: #f00;
 }
 
 .card:nth-child(even){
@@ -366,7 +385,7 @@ body{
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border: 5px solid $bg-gray;
+    border: 5px solid $body-bg;
     border-radius: 50%;
 }.card:nth-child(even)::after{
     content: '';
@@ -376,7 +395,7 @@ body{
     transform: translateY(-50%);
     width: 8%;
     height: 2px;
-    background: #fff;
+    background: $white;
     z-index: -1;
 }
 .card:nth-child(odd)::before{
@@ -387,7 +406,7 @@ body{
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border: 5px solid $bg-gray;
+    border: 5px solid $body-bg;
     border-radius: 50%;
 }.card:nth-child(odd)::after{
     content: '';
@@ -397,20 +416,20 @@ body{
     transform: translateY(-50%);
     width: 8%;
     height: 2px;
-    background: #fff;
+    background: $white;
     z-index: -1;
 }
 /* timeline card colors */
 .card:nth-child(2), .card:nth-child(2)::before{
-    background: #ff4f4f;
-}.card:nth-child(3), .card:nth-child(3)::before{
-    background: #ffb84f;
+    background: $red;
+}.card:nth-child(3), .card:nth-child(3)::before{    
+    background: $yellow;
 }.card:nth-child(4), .card:nth-child(4)::before{
-    background: #3dca5c;
+    background: $green;
 }.card:nth-child(5), .card:nth-child(5)::before{
-    background: #565252;
+    background: $gray;
 }.card:nth-child(6), .card:nth-child(6)::before{
-    background: #4fa0ff;
+    background: $blue;
 }
 /* vertical line */
 .card:nth-child(even) .card-body::before{
@@ -420,7 +439,7 @@ body{
     top: 0;
     width: 0;
     height: 100%;
-    border: 1px dashed #fff;
+    border: 1px dashed $white;
     z-index: -1;
 }
 
@@ -450,15 +469,15 @@ body{
     width: 100%;
     height: 40px;
     background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
+    border: 1px solid $white;
     border-radius: 8px;
     margin-bottom: 30px;
     text-transform: capitalize;
-    color: #fff;
+    color: $white;
     padding: 10px 20px;
 }
 ::placeholder{
-    color: #fff;
+    color: $white;
 }
 
 #msg{
@@ -469,8 +488,8 @@ body{
 }
 
 .form-submit-btn{
-    background: #ff4f4f;
-    color: #fff;
+    background: $red;
+    color: $white;
     text-transform: capitalize;
     padding: 15px 20px;
     display: block;
@@ -485,7 +504,7 @@ body{
     width: 100%;
     height: 80%;
     padding: 10px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
