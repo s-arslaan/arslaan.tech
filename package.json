@@ -1,0 +1,25 @@
+{
+  "name": "arslaan.tech",
+  "version": "1.0.0",
+  "description": "arslaan's portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:scss",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-arslaan/arslaan.tech.git"
+  },
+  "author": "arslaan shaikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-arslaan/arslaan.tech/issues"
+  },
+  "homepage": "https://github.com/s-arslaan/arslaan.tech#readme",
+  "devDependencies": {
+    "scss": "^0.2.4"
+  }
+}
